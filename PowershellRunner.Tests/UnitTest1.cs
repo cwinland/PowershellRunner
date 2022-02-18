@@ -9,6 +9,7 @@ namespace PowershellRunner.Tests
         public void TestMethod1()
         {
             var runner = new PowerShellRunner();
+            runner.AddMachinePaths = true;
         }
     }
 }
