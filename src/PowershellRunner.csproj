@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Microsoft</Authors>
+    <Copyright>Copyright(c) Microsoft 2022</Copyright>
+    <PackageProjectUrl>https://github.com/cwinland/PowershellRunner</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cwinland/PowershellRunner</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>Powershell, Command, Multiple versions, scripts</PackageTags>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <PackageLicenseFile>\LICENSE</PackageLicenseFile>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Properties\AssemblyInfo.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AssemblyInfo.tt</DependentUpon>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management.Automation" Version="7.1.5" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+    <ItemGroup>
+        <None Update="AssemblyInfo.tt">
+            <Generator>TextTemplatingFileGenerator</Generator>
+            <LastGenOutput>AssemblyInfo.cs</LastGenOutput>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Update="AssemblyInfo.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AssemblyInfo.tt</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="..\LICENSE" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+</Project>

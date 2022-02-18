@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowershellRunner", "src\PowershellRunner.csproj", "{064ADEF4-ED76-45DD-8463-0DD0498021B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowershellRunner.Tests", "PowershellRunner.Tests\PowershellRunner.Tests.csproj", "{A9D889FC-3926-40CD-AE04-4A21E84BFD22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{064ADEF4-ED76-45DD-8463-0DD0498021B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064ADEF4-ED76-45DD-8463-0DD0498021B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064ADEF4-ED76-45DD-8463-0DD0498021B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064ADEF4-ED76-45DD-8463-0DD0498021B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D889FC-3926-40CD-AE04-4A21E84BFD22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D889FC-3926-40CD-AE04-4A21E84BFD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D889FC-3926-40CD-AE04-4A21E84BFD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D889FC-3926-40CD-AE04-4A21E84BFD22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F2D2EF5-32FB-4B28-98E5-BE6F2C905992}
+	EndGlobalSection
+EndGlobal
